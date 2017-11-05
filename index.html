@@ -42,13 +42,12 @@
                     
                     <div class="row">
                         <div class="code-img-container">
-                            <h2 class="text-on-img"><span style="margin-right: 17px;font-family: 'Source Code Pro', monospace;">$</span><span id="main">We design and build <br>
-                                corporate websites <br> e-commerce websites <br> web applications</span></h2>
-                            <img class="code-img imgGlobal" src="images/dark_code_editor_window%20-%20edit-Recovered.png">
+                            <h2 class="text-on-img"><span class="dollar-sign">$</span><span id="main"></span></h2>
+                            <img class="code-img imgGlobal" src="images/dark_code_editor_window%20-%20edit-noheader.png">
                         </div>
                     </div>
-                    <div class="row">
-                        <a href="#section1"> <div style="text-align:center; margin-top:70px;" class="svg-wrapper button1">
+                    <div class="row landing-bottom">
+                        <a href="#section1"> <div class="svg-wrapper button1">
                           <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                             <rect class="shape" height="60" width="320" />
                           </svg>
@@ -210,7 +209,10 @@
         <script>
 
             $('#main').typeIt({
-                 speed: 150,
+                strings: ['We design and build','Corporate Websites', 'E-Commerce Websites', 'Web Applications',''],
+                 speed: 120,
+                lifeLike: false,
+                
                  
             });
             
