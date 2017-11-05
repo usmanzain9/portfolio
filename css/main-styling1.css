@@ -152,6 +152,10 @@ hr{
     .code-img{
         width: 400px !important;
     }
+    #section3{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 @media (max-width: 470px) {
     .code-img{
