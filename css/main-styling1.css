@@ -69,7 +69,8 @@ a{
 
 #section3{
     background-image: url(../images/bg_0.svg);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -153,8 +154,6 @@ hr{
         width: 400px !important;
     }
     #section3{
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
 @media (max-width: 470px) {
