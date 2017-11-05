@@ -163,11 +163,6 @@ hr{
         background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71) !important;  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-    #main{
-        font-family: 'Montserrat', sans-serif !important;
-        font-size: 22px;
-        text-align: center !important;
-    }
     .landing-text{
         color: white;
     }
@@ -176,6 +171,16 @@ hr{
     }
     .code-img-container{
         margin: auto;
+    }
+    #main{
+        font-size: 16px;
+    }
+    .dollar-sign{
+        font-size: 16px;
+    }
+    .text-on-img{
+        padding-left: 60px;
+        padding-top: 20px;
     }
 }
 @media (max-width: 470px) {
@@ -262,10 +267,10 @@ hr{
         font-size: 16px;
     }
     .dollar-sign{
-        font-size: 16px;
+        font-size: 18px;
     }
     .text-on-img{
-        padding-left: 35px;
+        padding-left: 40px;
         padding-top: 20px;
     }
 }
