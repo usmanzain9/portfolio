@@ -163,12 +163,6 @@ hr{
         background: -webkit-linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71) !important;  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-    .code-img{
-        display: none;
-    }
-    .dollar-sign{
-        display: none;
-    }
     #main{
         font-family: 'Montserrat', sans-serif !important;
         font-size: 22px;
@@ -178,7 +172,7 @@ hr{
         color: white;
     }
     .logo-container{
-        height: 80px;
+        height: 130px;
     }
     .code-img-container{
         margin: auto;
@@ -261,6 +255,18 @@ hr{
     }
     .text-on-img{
         padding-left: 185px;
+    }
+}
+@media (max-width: 370px){
+    #main{
+        font-size: 16px;
+    }
+    .dollar-sign{
+        font-size: 16px;
+    }
+    .text-on-img{
+        padding-left: 35px;
+        padding-top: 20px;
     }
 }
 .landing-bottom{
