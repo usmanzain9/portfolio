@@ -273,6 +273,15 @@ hr{
         padding-left: 40px;
         padding-top: 20px;
     }
+    #section0{
+        height: auto;
+    }
+    .landing-bottom{
+        display: none;
+    }
+    .code-img{
+        margin-bottom: 60px;
+    }
 }
 .landing-bottom{
     position: absolute;
