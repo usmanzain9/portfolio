@@ -15,7 +15,8 @@
         <link rel="icon" href="images/u-square2.svg" type="image/x-icon"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800" rel="stylesheet">
-
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
         
     
         <script src="js/jquery-3.2.1.min.js"></script>
@@ -31,7 +32,7 @@
     <body>
                     
             <div id="section0">
-            
+                
                 <div class="container">
                     <div class="row logo-container">
                         <a href="#section0">
@@ -41,19 +42,20 @@
                     
                     <div class="row">
                         <div class="code-img-container">
-                            <h2 class="text-on-img"><span style="margin-right: 17px;">$</span><span id="main"></span> </h2>
+                            <h2 class="text-on-img"><span style="margin-right: 17px;font-family: 'Source Code Pro', monospace;">$</span><span id="main">We design and build <br>
+                                corporate websites <br> e-commerce websites <br> web applications</span></h2>
                             <img class="code-img imgGlobal" src="images/dark_code_editor_window%20-%20edit-Recovered.png">
                         </div>
                     </div>
                     <div class="row">
-                        <a href="#secondPage"> <div style="text-align:center; margin-top:70px;" class="svg-wrapper">
+                        <a href="#section1"> <div style="text-align:center; margin-top:70px;" class="svg-wrapper button1">
                           <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                             <rect class="shape" height="60" width="320" />
                           </svg>
                            <div class="text">TAKE A LOOK</div></div> 
                         </a>
                         <p class="landing-text">Learn more about what we do.</p>
-                        <a href="#secondPage"><img id="downArrow" class="imgGlobal" src="images/png/down-arrow.png"></a>
+                        <a href="#section1"><img id="downArrow" class="imgGlobal" src="images/png/down-arrow.png"></a>
                     </div>                    
                 </div>                
             </div>
@@ -112,7 +114,34 @@
                         </div>
                         <div class="col-md-2"></div>
                         <div class="col-md-6">
-                            <img class="p-img" style="float:right;" src="images/macbook2015_freebie_gold%201.png">
+                            <img class="p-img" style="float:right;" src="images/gamerzworld_mockup.png">
+                        </div>
+                    </div>
+                    <div class="row"><hr></div>
+                    <div class="row quote-row">
+                        <div class="col-lg-12">
+                            <blockquote class="quotes">"Good quality work. Perfect for anyone starting out with low budget."</blockquote>
+                            <p class='by'>- Uzair Yacob, GM, Gamerz World</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <hr>
+                    </div>
+                    <div class="row row-text ">
+                        <div class="col-md-4">
+                            <h3 class="p-heading" >FFFMP3</h3>
+                            <p></p>
+                            <p class="text-muted">Gamerzworld is an e-commerce store which deals in all kinds of computer related hardware. It is based in Karachi, the biggest of Pakistan. It strives to give their customers unbeatable prices and best service.
+                            </p>
+                            <div class="blankdiv"></div>
+                            <p><a class="hvr-back-pulse" href="http://fffmp3.com/" target="_blank">VISIT WEBSITE</a></p>
+                            <div class="blankdiv2"></div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-6">
+                            <img class="p-img" style="float:right;" src="images/fffmp3_mockup.png">
                         </div>
                     </div>
                     <div class="row"><hr></div>
@@ -178,13 +207,46 @@
                 
         
         <script>
-            
+
             $('#main').typeIt({
-                 strings: ["Web Designing", "Graphic Designing", "UX/UI Design"],
                  speed: 150,
-                 breakLines: false,
-                 autoStart: false
+                 
             });
+            
+            $('a[href*="#"]')
+             
+              .not('[href="#"]')
+              .not('[href="#0"]')
+              .click(function(event) {
+        
+                if (
+                  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                  && 
+                  location.hostname == this.hostname
+                ) {
+                  
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  
+                  if (target.length) {
+                    
+                    event.preventDefault();
+                    $('html, body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000, function() {
+                      
+                      var $target = $(target);
+                      $target.focus();
+                      if ($target.is(":focus")) {
+                        return false;
+                      } else {
+                        $target.attr('tabindex','-1');
+                        $target.focus();
+                      };
+                    });
+                  }
+                }
+              });
             
         </script>
     </body>

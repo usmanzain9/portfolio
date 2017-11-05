@@ -68,7 +68,9 @@ a{
 }
 
 #section3{
-    background: #333333;
+    background-image: url(../images/bg_0.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 hr{
@@ -177,6 +179,26 @@ hr{
     }
     .landing-text{
         display: none;
+    }
+}
+@media (max-width: 1199px) {
+    .text-on-img{
+        padding-left: 180px;
+    }
+}
+@media (max-width: 991px) {
+    .text-on-img{
+        padding-left: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .text-on-img{
+        padding-left: 120px;
+    }
+}
+@media (max-width: 767px) {
+    .text-on-img{
+        padding-left: 50px;
     }
 }
 
@@ -358,4 +380,7 @@ hr{
     font-size: 20px;
     font-weight:300;
     color:#ffffff;
+}
+#main{
+    font-family: 'Source Code Pro', monospace;
 }
