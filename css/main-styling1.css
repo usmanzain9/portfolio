@@ -30,9 +30,9 @@ a{
     background-position: center;
     background-repeat: no-repeat;
 }
-/*Photo by Sawyer Bengtson on Unsplash */
+/* Photo by Tobias van Schneider on Unsplash */
 .parallax{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/tobias-van-schneider-230171.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
