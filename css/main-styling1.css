@@ -41,7 +41,8 @@ a{
 .navbar{
     padding-left: 100px;
     padding-right: 100px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    background: #fff !important;
 }
 .typeit-div{
     padding-left: 100px;
@@ -275,7 +276,7 @@ hr{
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
     padding: 1em 1.5em;
-    background: #006DF1;
+    background: #666385;
     color: floralwhite;
     font-family: 'Open Sans', sans-serif;
     border-radius: 50px;
@@ -333,8 +334,39 @@ hr{
     font-family: 'Open Sans', sans-serif;
 }
 .footer{
-    height: auto;
+    height: 150px;
 }
+
+.footer-logo{
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+    float: left;
+
+}
+
+.footer-para{
+    float: right;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    color: #D5D6D2;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.footer-para-head{
+    
+    font-size: 19px;
+
+}
+.foot-text{
+    color: #D5D6D2;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    float: left;
+    position: absolute;
+}
+
 
 
 @media (max-width: 768px) {
