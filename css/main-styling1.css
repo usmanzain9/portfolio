@@ -25,10 +25,7 @@ a{
 }
 
 #section3{
-    background-image: url(../images/bg_0.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #292929;
 }
 /* Photo by Tobias van Schneider on Unsplash */
 .parallax{
@@ -43,6 +40,9 @@ a{
     padding-right: 100px;
     margin-bottom: 40px;
     background: #fff !important;
+}
+.navbar-toggler{
+    margin-top: 15px;
 }
 .typeit-div{
     padding-left: 100px;
