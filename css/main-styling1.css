@@ -27,9 +27,9 @@ a{
 #section3{
     background: #292929;
 }
-/* Photo by Tobias van Schneider on Unsplash */
+/* Photo by Tobias van Schneider on Unsplash  */
 .parallax{
-    background-image: url(../images/tobias-van-schneider-230171.jpg);
+    background-image: url(../images/tobias-van-schneider-230171-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
